@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "16ac2e1c1fce94e41ee47b11446a6b94",
+    "revision": "b3a5121ad543f5e82f0b58c2862f7a26",
     "url": "//mathieubouhelier.github.io/shopping-online/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "//mathieubouhelier.github.io/shopping-online/static/css/2.82117524.chunk.css"
   },
   {
-    "revision": "db6343130894266530d4",
+    "revision": "c52adf8d27ef35d7e3c3",
     "url": "//mathieubouhelier.github.io/shopping-online/static/css/main.246f8e45.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "//mathieubouhelier.github.io/shopping-online/static/js/2.9bb8bb92.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "db6343130894266530d4",
-    "url": "//mathieubouhelier.github.io/shopping-online/static/js/main.9a27ee71.chunk.js"
+    "revision": "c52adf8d27ef35d7e3c3",
+    "url": "//mathieubouhelier.github.io/shopping-online/static/js/main.26013576.chunk.js"
   },
   {
     "revision": "06e0e9ba5c785f3d20bd",
