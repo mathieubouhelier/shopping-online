@@ -1,4 +1,25 @@
-.shoppingCartLink {
+/* * {
+  border: black solid 1px; 
+} */
+
+.navigation {
+  background-color: #fff159;
+ /*  align-items: center;
+   color: aliceblue;
+  display: flex;
+  justify-content: space-around;
+  min-height: 5vh;
+  padding: 30px; */
+}
+
+.navigation img {
+   /* align-items: center;
+  display: flex;
+  justify-content: center;  */
+  width: 50px;
+}
+
+/* .shoppingCartLink {
   display: flex;
   justify-content: space-between;
-}
+} */

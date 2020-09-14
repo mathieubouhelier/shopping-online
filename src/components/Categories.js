@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Categories.css';
 
 class Categories extends Component {
   constructor() {
@@ -15,19 +16,20 @@ class Categories extends Component {
     if (categories === '') return 'Carregando...';
     return (
       <div>
-        <h1>Categories</h1>
+        <h4 className="categories-title"> Categories</h4>
         <div>
           {categories.map((category) => (
-            <div key={category.name}>
-              <label htmlFor={category.name}>
+            <div className="form-check" key={category.name}>
+              <label class="form-check-label">
                 <input
+                  class="form-check-input form-check-input-categories"
                   data-testid="category"
                   type="radio"
                   value={category.id}
                   checked={selectedCategory === category.id}
                   onChange={this.onValueChange}
                 />
-                {category.name}
+                <span className="categories-font">{category.name}</span>
               </label>
             </div>
           ))}

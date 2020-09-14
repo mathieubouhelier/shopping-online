@@ -19,7 +19,7 @@ class RateProduct extends Component {
       <section className="rate-section">
         <h3 className="rate-title">Avaliações</h3>
         <form className="rate-form">
-          <div className="frst-line">
+          <div className="first-line">
             <input
               className="rate-email" name="email" data-testid="product-detail-evaluation"
               type="email" placeholder="Email" defaultValue={textEmail}
@@ -34,7 +34,7 @@ class RateProduct extends Component {
               className="rate-area" type="text"
               placeholder="Mensagem(opcional)" defaultValue={textArea}
             />
-            <button className="rate-button">Avaliar</button>
+            <button className=" btn btn-primary m-4 rate-button">Avaliar</button>
           </div>
         </form>
       </section>

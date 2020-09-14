@@ -25,93 +25,139 @@ class CheckoutForm extends React.Component {
 
   nameFormRender() {
     return (
-      <label htmlFor="name">
-        Name :
-        <input
-          name="name"
-          data-testid="checkout-fullname"
-          type="text"
-          value={this.state.name}
-          onChange={this.handleChange}
-        />
-      </label>
+      <input
+        name="name"
+        data-testid="checkout-fullname"
+        type="text"
+        value={this.state.name}
+        onChange={this.handleChange}
+        className="form-control"
+        placeholder="First name"
+      />
     );
   }
 
   phoneFormRender() {
     return (
-      <label htmlFor="phone">
-        Phone :
-        <input
-          name="phone"
-          data-testid="checkout-phone"
-          type="text"
-          value={this.state.phone}
-          onChange={this.handleChange}
-        />
-      </label>
+      <input
+        className="form-control"
+        name="phone"
+        data-testid="checkout-phone"
+        type="text"
+        value={this.state.phone}
+        onChange={this.handleChange}
+        placeholder="Phone"
+      />
     );
   }
 
   CEPFormRender() {
     return (
-      <label htmlFor="cep">
-        CEP :
-        <input
-          name="CEP"
-          data-testid="checkout-cep"
-          type="text"
-          value={this.state.CEP}
-          onChange={this.handleChange}
-        />
-      </label>
+      // <label htmlFor="cep">
+      //   CEP :
+      //   </label>
+      <input
+        className="form-control"
+        name="CEP"
+        data-testid="checkout-cep"
+        type="text"
+        value={this.state.CEP}
+        onChange={this.handleChange}
+        placeholder="CEP"
+      />
     );
   }
 
   adressFormRender() {
     return (
-      <label htmlFor="adress">
-        Adress :
-        <textarea
-          name="adress"
-          data-testid="checkout-address"
-          type="text area"
-          value={this.state.adress}
-          onChange={this.handleChange}
-        />
-      </label>
+      <textarea
+        className="form-control"
+        name="adress"
+        data-testid="checkout-address"
+        type="text area"
+        value={this.state.adress}
+        onChange={this.handleChange}
+        placeholder="Address"
+      />
     );
   }
 
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <this.nameFormRender />
-
-        <label htmlFor="email">
-          Email :
+        <div className="form-group">
+          <this.nameFormRender />
+        </div>
+        <div className="form-group">
           <input
+            className="form-control"
             name="email"
             data-testid="checkout-email"
             type="text"
             value={this.state.email}
             onChange={this.handleChange}
+            placeholder="Email"
           />
-        </label>
-        <label htmlFor="cpf">
-          CPF :
+        </div>
+        <div className="form-group">
           <input
+            className="form-control"
             name="cpf"
             data-testid="checkout-cpf"
             type="text"
             value={this.state.cpf}
             onChange={this.handleChange}
+            placeholder="CPF"
           />
-        </label>
-        <this.phoneFormRender />
-        <this.CEPFormRender />
-        <this.adressFormRender />
-        <input type="submit" value="Send" />
+        </div>
+        <div className="form-group">
+          <this.phoneFormRender />
+        </div>
+        <div className="form-group">
+          <this.CEPFormRender />
+        </div>
+
+        <div className="form-group">
+          <this.adressFormRender />
+        </div>
+          <div className="form-inline">
+        <div className="form-check mr-3">
+          <input
+            className="form-check-input position-static"
+            type="radio"
+            name="blankRadio"
+            id="visa"
+            value="visa"
+            aria-label="..."
+          />
+          <i className="fa fa-cc-visa fa-3x pl-2" style={{ color: '#007bff' }}></i>
+        </div>
+        <div className="form-check mr-3">
+          <input
+            className="form-check-input position-static"
+            type="radio"
+            name="blankRadio"
+            id="amex"
+            value="amex"
+            aria-label="..."
+            />
+          <i className="fa fa-cc-amex fa-3x pl-2" style={{ color: '#007bff' }}></i>
+        </div>
+        <div className="form-check">
+          <input
+            className="form-check-input position-static"
+            type="radio"
+            name="blankRadio"
+            id="mastercard"
+            value="mastercard"
+            aria-label="..."
+            />
+          <i className="fa fa-cc-mastercard fa-3x pl-2" style={{ color: '#007bff' }}></i>
+        </div>
+            </div>
+        <button type="submit" value="Send" className="btn btn-primary mt-4">
+          Send
+        </button>
       </form>
     );
   }

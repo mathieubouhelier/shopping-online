@@ -1,0 +1,11 @@
+.form-check-input-categories {
+  visibility: hidden;
+}
+
+.form-check-label {
+  cursor: pointer;
+}
+
+.categories-title {
+  margin: 35px;
+}

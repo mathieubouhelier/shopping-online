@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import SearchBar from './SearchBar';
 import ProductList from './ProductList';
 import Categories from './Categories';
 import Header from './Header';
@@ -19,6 +18,7 @@ class MainPage extends Component {
       selectedCategory: '',
       cartProducts: [],
       count: 0,
+      categoriesToggle: false,
     };
     this.textChange = this.textChange.bind(this);
     this.handleClick = this.handleClick.bind(this);
@@ -27,6 +27,7 @@ class MainPage extends Component {
     this.removeProductToCart = this.removeProductToCart.bind(this);
     this.increment = this.increment.bind(this);
     this.decrement = this.decrement.bind(this);
+    this.toggleCategories = this.toggleCategories.bind(this);
   }
 
   componentDidMount() {
@@ -40,6 +41,11 @@ class MainPage extends Component {
         .getProductsFromCategoryAndQuery(selectedCategory, searchText)
         .then((products) => this.setState({ products }));
     }
+  }
+
+  toggleCategories() {
+    this.setState({ categoriesToggle: !this.state.categoriesToggle });
+    console.log(this.state.categoriesToggle);
   }
 
   onSelectedOptionChange(event) {
@@ -143,25 +149,55 @@ class MainPage extends Component {
   }
 
   renderMainContent() {
-    const { selectedCategory, products, categories, searchText } = this.state;
+    const { selectedCategory, products, categories } = this.state;
 
     return (
-      <div>
-        {/* <SearchBar
-          searchText={searchText}
-          textChange={this.textChange}
-          onClickSearch={this.handleClick}
-        /> */}
-        <ProductList
-          products={products}
-          onClickAdd={this.addProductToCart}
-          onclickIncrement={this.increment}
-        />
-        <Categories
-          selectedCategory={selectedCategory}
-          categories={categories}
-          onChangeOption={this.onSelectedOptionChange}
-        />
+      <div className="maincontent">
+        <div className="container-fluid bg-light d-bloc d-sm-none">
+          <div className="col ">
+            <button
+              class="btn btn-primary btn-block"
+              type="button"
+              onClick={() => this.toggleCategories()}
+            >
+              Categories
+            </button>
+            {this.state.categoriesToggle && (
+              <div className="row justify-content-center">
+                <Categories
+                  selectedCategory={selectedCategory}
+                  categories={categories}
+                  onChangeOption={this.onSelectedOptionChange}
+                />
+              </div>
+            )}
+            <div className="row">
+              <ProductList
+                products={products}
+                onClickAdd={this.addProductToCart}
+                onclickIncrement={this.increment}
+              />
+            </div>
+          </div>
+        </div>
+        <div className="container-fluid bg-light d-none d-sm-block">
+          <div className="row">
+            <div className="col-2">
+              <Categories
+                selectedCategory={selectedCategory}
+                categories={categories}
+                onChangeOption={this.onSelectedOptionChange}
+              />
+            </div>
+            <div className="col-10">
+              <ProductList
+                products={products}
+                onClickAdd={this.addProductToCart}
+                onclickIncrement={this.increment}
+              />
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

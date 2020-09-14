@@ -1,18 +1,11 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
-.nav {
-  background-color: yellow;
-  color: aliceblue;
-  display: flex;
-  justify-content: center;
-  min-height: 5vh;
-}
-.nav img {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  width: 20%;
+.categories-font {
+  color: #666;
+  font-family: Proxima Nova, Helvetica,Arial, sans-serifmain;
+  font-weight: 400;
+  font-size: 14px;
 }
 
