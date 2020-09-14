@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/mathieubouhelier/shopping-online.git/static/css/main.246f8e45.chunk.css",
+    "main.js": "/mathieubouhelier/shopping-online.git/static/js/main.a06d2609.chunk.js",
+    "main.js.map": "/mathieubouhelier/shopping-online.git/static/js/main.a06d2609.chunk.js.map",
+    "runtime-main.js": "/mathieubouhelier/shopping-online.git/static/js/runtime-main.c43fcbe7.js",
+    "runtime-main.js.map": "/mathieubouhelier/shopping-online.git/static/js/runtime-main.c43fcbe7.js.map",
+    "static/css/2.6ca10919.chunk.css": "/mathieubouhelier/shopping-online.git/static/css/2.6ca10919.chunk.css",
+    "static/js/2.cdc623c2.chunk.js": "/mathieubouhelier/shopping-online.git/static/js/2.cdc623c2.chunk.js",
+    "static/js/2.cdc623c2.chunk.js.map": "/mathieubouhelier/shopping-online.git/static/js/2.cdc623c2.chunk.js.map",
+    "index.html": "/mathieubouhelier/shopping-online.git/index.html",
+    "precache-manifest.c4c00477bca938e8a134233b32d1ffc4.js": "/mathieubouhelier/shopping-online.git/precache-manifest.c4c00477bca938e8a134233b32d1ffc4.js",
+    "service-worker.js": "/mathieubouhelier/shopping-online.git/service-worker.js",
+    "static/css/2.6ca10919.chunk.css.map": "/mathieubouhelier/shopping-online.git/static/css/2.6ca10919.chunk.css.map",
+    "static/css/main.246f8e45.chunk.css.map": "/mathieubouhelier/shopping-online.git/static/css/main.246f8e45.chunk.css.map",
+    "static/js/2.cdc623c2.chunk.js.LICENSE.txt": "/mathieubouhelier/shopping-online.git/static/js/2.cdc623c2.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/mathieubouhelier/shopping-online.git/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/logo.png": "/mathieubouhelier/shopping-online.git/static/media/logo.fdb1cd95.png",
+    "static/media/shop.png": "/mathieubouhelier/shopping-online.git/static/media/shop.2881be22.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c43fcbe7.js",
+    "static/css/2.6ca10919.chunk.css",
+    "static/js/2.cdc623c2.chunk.js",
+    "static/css/main.246f8e45.chunk.css",
+    "static/js/main.a06d2609.chunk.js"
+  ]
+}
