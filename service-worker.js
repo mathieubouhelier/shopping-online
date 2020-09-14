@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mathieubouhelier/shopping-online.git/precache-manifest.c4c00477bca938e8a134233b32d1ffc4.js"
+  "/mathieubouhelier/shopping-online.git/precache-manifest.fb28bce246cbd8057b40e0d16454a140.js"
 );
 
 self.addEventListener('message', (event) => {
