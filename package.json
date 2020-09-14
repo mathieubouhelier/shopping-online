@@ -1,6 +1,6 @@
 {
   "name": "online-store",
-  "homepage": "https://mathieubouhelier/shopping-online",
+  "homepage": "https://github.com/mathieubouhelier/shopping-online.git",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
